@@ -1,0 +1,60 @@
+.sidebar {
+    background: white;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 101;
+    padding: 1rem;
+    padding-top: 5.5rem;
+}
+.sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.customizable {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.customizable input[type="checkbox"] {
+    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    accent-color: #333;
+}
+
+.customizable label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 300px;
+        height: auto;
+        position: sticky;
+        top: 0;
+    padding-top: 0;
+
+    }
+    
+    .closeButton {
+        display: none;
+    }
+}

@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
@@ -8,7 +9,13 @@ import Wishlist from '../../../public/Wishlist.svg';
 import Lock from '../../../public/Lock.svg';
 import Hamburger from '../../../public/Hamburger.svg';
 import Language from '../../../public/Language.svg';
+import { useState } from 'react';
 const Header = () => {
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const toggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen);
+};
   const topBarItems = [
     {
       icon: Menu,
@@ -39,7 +46,8 @@ const Header = () => {
 
       <div className={styles.mainHeader}>
       <div className={styles.logoContainer}>
-        <Image src={Hamburger} alt="icohamburgerIcon" width={20} height={20} className={styles.hamburgerIcon} />
+        <Image src={Hamburger} alt="icohamburgerIcon" width={20} height={20} className={styles.hamburgerIcon}   onClick={toggleMenu}
+        />
         <Image src={Logo} alt="logo" width={20} height={20} />
       </div>
       <h2>LOGO</h2>
@@ -57,7 +65,7 @@ const Header = () => {
       </div>
       </div>
 
-      <nav className={styles.mainNav}>
+<nav className={`${styles.mainNav} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
   <Link href="/shop">SHOP</Link>
   <Link href="/skills">SKILLS</Link>
   <Link href="/stories">STORIES</Link>

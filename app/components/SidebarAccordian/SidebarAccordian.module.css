@@ -1,0 +1,76 @@
+
+.accordionItem {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #757575;
+    margin: 0;
+}
+
+.arrow {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+.arrow.up {
+    transform: rotate(135deg);
+}
+
+.accordionContent {
+    padding-top: 1rem;
+}
+
+.unselect {
+    display: block;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.optionsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.optionsList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.optionsList input[type="checkbox"] {
+    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    accent-color: #333;
+}
+
+.optionsList label {
+    font-size: 0.9rem;
+    color: #555;
+}

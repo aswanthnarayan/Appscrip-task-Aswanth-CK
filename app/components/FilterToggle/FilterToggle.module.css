@@ -1,0 +1,68 @@
+.filterToggle {
+    display: flex;
+    border-bottom: 1px solid #252020;
+    border-top: 1px solid #252020;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem;
+}
+
+.filterToggleLeft, 
+.filterToggleRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.filterToggleLeft {
+    border-right: 1px solid #252020;
+    position: relative;
+}
+
+.filterToggleLargeScreen {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.mobileFilter {
+    display: block;
+    margin: 0;
+}
+
+.filterToggleRight h6 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.showFilter {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+}
+
+.filterToggleRight img , .showFilter img {
+    width: 12px;
+    height: 12px;
+}
+
+@media (min-width: 768px) {
+    .filterToggleLargeScreen {
+        display: flex;
+    }
+    .mobileFilter {
+        display: none;
+    }
+    .filterToggleRight{
+        justify-content: flex-end;
+    }
+}
