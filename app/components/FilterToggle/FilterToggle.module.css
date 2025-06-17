@@ -1,9 +1,9 @@
 .filterToggle {
     display: flex;
-    border-bottom: 1px solid #252020;
-    border-top: 1px solid #252020;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.075);
+    border-top: 1px solid rgba(34, 34, 34, 0.075);
     padding: 0.7rem 1rem;
-    margin: 0 1rem;
+    margin: 0rem;
 }
 
 .filterToggleLeft, 
@@ -18,7 +18,7 @@
 }
 
 .filterToggleLeft {
-    border-right: 1px solid #252020;
+    border-right: 1px solid rgba(34, 34, 34, 0.075);
     position: relative;
 }
 

@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     width: 100%;
+    padding: 0 1rem;
     /* min-height: 100vh; */
   }
   
@@ -20,8 +21,15 @@
   .contentArea {
     flex: 1;
     transition: margin 0.3s ease;
+    padding: 1rem;
   }
-  
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem;
+  width: 100%;
+}
+
   @media (min-width: 768px) {
     .sidebarContainer {
       position: static;
@@ -34,4 +42,18 @@
     .contentArea.sidebarOpen {
       width: calc(100% - 300px);
     }
+
+    .productGrid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet */
+      gap: 1.5rem;
+    }
   }
+
+@media (min-width: 1200px) {
+  .contentArea:not(.sidebarOpen) .productGrid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .contentArea.sidebarOpen .productGrid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}

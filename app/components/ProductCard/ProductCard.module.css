@@ -1,11 +1,81 @@
+
 .productCard {
-    width: 100%;
-    padding: 0 1rem;
+    font-family: sans-serif;
+    text-align: left;
+}
+.productNameContainer{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-/* For larger screens */
-@media (min-width: 768px) {
-    .productCard {
-        padding: 0 2rem;
-    }
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    background-color: #f5f5f5; 
+    aspect-ratio: 3 / 4; 
+}
+
+.productImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover .productImage {
+    transform: scale(1.05);
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0.25rem;
+}
+
+.cardInfo {
+    flex: 1;
+}
+
+.productName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+.loginText {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+.loginText span {
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wishlistButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    color: #f5f5f5;
+}
+
+.wishlistButton:hover {
+    opacity: 1;
+}
+
+.wishlistButton:hover {
+    color: #EB4C6B; 
 }

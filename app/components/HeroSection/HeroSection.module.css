@@ -4,6 +4,9 @@
     text-transform: uppercase;
     padding: 1rem   ;
 }
+.breadcrumps span{
+    opacity: 0.5;
+}
 
 .heroContent{
     text-align: center;
@@ -14,3 +17,10 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media (min-width: 768px) {
+    .breadcrumps{
+        display: none;
+    }
+}
+    
