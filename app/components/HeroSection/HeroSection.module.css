@@ -1,0 +1,16 @@
+.breadcrumps{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem   ;
+}
+
+.heroContent{
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
