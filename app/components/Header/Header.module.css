@@ -121,10 +121,19 @@
   width: 36px;
   height: 36px;
 }
-.mainNav a {
+.mainNav{
   display: flex !important;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333; 
+  padding: 1rem;  
+}
+
+.mainNav a{
   gap: 20px;
   font-size: 1.25rem;
   font-weight: 600;

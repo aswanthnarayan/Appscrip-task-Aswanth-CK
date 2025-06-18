@@ -1,17 +1,9 @@
+"use client";
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import FooterAccordion from '../FooterAccordion/FooterAccordion';
-import UsaFlag from '../../../public/Usa-flag.svg';
-import GooglePay from '../../../public/GooglePay.svg';
-import MasterCard from '../../../public/MasterCard.svg';
-import Amex from '../../../public/Amex.svg';
-import PayPal from '../../../public/PayPal.svg';
-import ApplePay from '../../../public/ApplePay.svg';
-import ShopPay from '../../../public/ShopPay.svg';
-import Instagram from '../../../public/Instagram.svg';
-import LinkedIn from '../../../public/LinkedIn.svg';    
 
 const Footer = () => {
   const mettaMuseLinks = [
@@ -53,7 +45,7 @@ const Footer = () => {
       
             <h3 className={styles.footerTitle}>Currency</h3>
             <div className={styles.currencySelector}>
-              <Image src={UsaFlag} alt="USA Flag" width={24} height={24} />
+              <Image src="/Usa-flag.svg" alt="USA Flag" width={24} height={24} />
               <span>USD</span>
             </div>
             <p className={styles.currencyNote}>Transactions will be completed in Euros and a currency reference is available on hover.</p>
@@ -82,17 +74,17 @@ const Footer = () => {
             <div className={styles.linkColumn}>
               <h3 className={styles.footerTitle}>FOLLOW US</h3>
               <div className={styles.socialIcons}>
-                <a href="#"><Image src={Instagram} alt="Instagram" width={24} height={24} /></a>
-                <a href="#"><Image src={LinkedIn} alt="LinkedIn" width={24} height={24} /></a>
+                <a href="#"><Image src="/Instagram.svg" alt="Instagram" width={24} height={24} /></a>
+                <a href="#"><Image src="/LinkedIn.svg" alt="LinkedIn" width={24} height={24} /></a>
               </div>
               <h3 className={styles.footerTitle} style={{marginTop: '2rem'}}>mettā muse ACCEPTS</h3>
               <div className={styles.paymentIcons}>
-                <Image src={GooglePay} alt="Google Pay" width={50} height={32} />
-                <Image src={MasterCard} alt="Mastercard" width={50} height={32} />
-                <Image src={PayPal} alt="PayPal" width={50} height={32} />
-                <Image src={Amex} alt="American Express" width={50} height={32} />
-                <Image src={ApplePay} alt="Apple Pay" width={50} height={32} />
-                <Image src={ShopPay} alt="ShopPay" width={50} height={32} />
+                <Image src="/GooglePay.svg" alt="Google Pay" width={50} height={32} />
+                <Image src="/MasterCard.svg" alt="Mastercard" width={50} height={32} />
+                <Image src="/PayPal.svg" alt="PayPal" width={50} height={32} />
+                <Image src="/Amex.svg" alt="American Express" width={50} height={32} />
+                <Image src="/ApplePay.svg" alt="Apple Pay" width={50} height={32} />
+                <Image src="/ShopPay.svg" alt="ShopPay" width={50} height={32} />
               </div>
             </div>
           </div>
@@ -115,23 +107,23 @@ const Footer = () => {
             </FooterAccordion>
             <FooterAccordion title="Follow Us">
               <div className={styles.socialIcons}>
-                <a href="#"><Image src={Instagram} alt="Instagram" width={24} height={24} /></a>
-                <a href="#"><Image src={LinkedIn} alt="LinkedIn" width={24} height={24} /></a>
+                <a href="#"><Image src="/Instagram.svg" alt="Instagram" width={24} height={24} /></a>
+                <a href="#"><Image src="/LinkedIn.svg" alt="LinkedIn" width={24} height={24} /></a>
               </div>
             </FooterAccordion>
             <h3 className={styles.footerTitle} style={{marginTop: '1rem'}}>mettā muse ACCEPTS</h3>
             <div className={styles.paymentIcons}>
-            <Image src={GooglePay} alt="Google Pay" width={50} height={30} />
-                <Image src={MasterCard} alt="Mastercard" width={50} height={30} />
-                <Image src={PayPal} alt="PayPal" width={50} height={30} />
-                <Image src={Amex} alt="American Express" width={50} height={30} />
-                <Image src={ApplePay} alt="Apple Pay" width={50} height={30} />
-                <Image src={ShopPay} alt="ShopPay" width={50} height={30} />
+            <Image src="/GooglePay.svg" alt="Google Pay" width={50} height={30} />
+                <Image src="/MasterCard.svg" alt="Mastercard" width={50} height={30} />
+                <Image src="/PayPal.svg" alt="PayPal" width={50} height={30} />
+                <Image src="/Amex.svg" alt="American Express" width={50} height={30} />
+                <Image src="/ApplePay.svg" alt="Apple Pay" width={50} height={30} />
+                <Image src="/ShopPay.svg" alt="ShopPay" width={50} height={30} />
             </div>
           </div>
         </div>
 
-        <p className={styles.copyright}>Copyright © 2023 mettamuse. All rights reserved.</p>
+        <p className={styles.copyright}>Copyright  2023 mettamuse. All rights reserved.</p>
       </div>
     </footer>
   );
