@@ -8,13 +8,13 @@ export default function FilterToggle({ onFilterClick, isSidebarOpen }) {
         <div className={styles.filterToggle}>
             <div className={styles.filterToggleLeft}>
                 <div className={styles.filterToggleLargeScreen}>
-                    <h6>1125 ITEMS</h6>
-                    <h6 className={styles.showFilter} onClick={onFilterClick}>
+                    <p className={styles.itemCount}>3245 ITEMS</p>
+                    <button type="button" className={styles.showFilter} onClick={onFilterClick}>
                         <span className={`${styles.chevron} ${isSidebarOpen ? styles.rotated : ''}`}>›</span>
                         {isSidebarOpen ? 'HIDE FILTER' : 'SHOW FILTER'}
-                    </h6>
+                    </button>
                 </div>
-                <h6 className={styles.mobileFilter} onClick={onFilterClick}>FILTER</h6>
+                <button type="button" className={styles.mobileFilter} onClick={onFilterClick}>FILTER</button>
             </div>
             <div className={styles.filterToggleRight}>
                 <SortPopover />

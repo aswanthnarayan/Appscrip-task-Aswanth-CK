@@ -38,7 +38,7 @@ const toggleMenu = () => {
             key={index}
             className={`${styles.topBarItem} ${index > 0 ? styles.hideOnMobile : ''}`}
           >
-            <Image src={Menu} alt="icon" width={16} height={16} />
+            <Image src={Menu} alt="Menu icon" width={16} height={16} />
             <span>{item.text}</span>
           </div>
         ))}
@@ -46,18 +46,19 @@ const toggleMenu = () => {
 
       <div className={styles.mainHeader}>
       <div className={styles.logoContainer}>
-        <Image src={Hamburger} alt="icohamburgerIcon" width={20} height={20} className={styles.hamburgerIcon}   onClick={toggleMenu}
-        />
-        <Image src={Logo} alt="logo" width={20} height={20} />
+        <button type="button" onClick={toggleMenu} className={styles.hamburgerButton}>
+          <Image src={Hamburger} alt="Hamburger menu icon" width={20} height={20} />
+        </button>
+        <Image src={Logo} alt="Company Logo" width={20} height={20} />
       </div>
       <h2>LOGO</h2>
       <div className={styles.searchContainer}>
-        <Image src={Search} alt="search" width={20} height={20} />
-        <Image src={Wishlist} alt="wishlist" width={20} height={20} />
-        <Image src={Lock} alt="lock" width={20} height={20} />
+        <Image src={Search} alt="Search icon" width={20} height={20} />
+        <Image src={Wishlist} alt="Wishlist icon" width={20} height={20} />
+        <Image src={Lock} alt="Cart icon" width={20} height={20} />
         <Image 
     src={Language} 
-    alt="language" 
+    alt="Language selection icon" 
     width={20} 
     height={20} 
     className={styles.languageIcon}

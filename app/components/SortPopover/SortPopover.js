@@ -44,13 +44,15 @@ const SortPopover = () => {
       {isOpen && (
         <ul className={styles.popoverMenu}>
           {options.map((option) => (
-            <li
-              key={option}
-              className={`${styles.popoverMenuItem} ${selectedOption === option ? styles.selected : ''}`}
-              onClick={() => handleOptionClick(option)}
-            >
-              {selectedOption === option && <span className={styles.checkmark}>✓</span>}
-              {option}
+            <li key={option}>
+              <button
+                type="button"
+                className={`${styles.popoverMenuItem} ${selectedOption === option ? styles.selected : ''}`}
+                onClick={() => handleOptionClick(option)}
+              >
+                {selectedOption === option && <span className={styles.checkmark}>✓</span>}
+                {option}
+              </button>
             </li>
           ))}
         </ul>

@@ -19,7 +19,7 @@
     gap: 1rem;
     padding:1rem;
 }
-.heroContent h3{
+.heroContent h1{
     font-size: 1.3rem;
 }
 .heroContent p{
@@ -35,7 +35,7 @@
     .heroContent{
         padding: 2.5rem 1rem;
     }
-    .heroContent h3{
+    .heroContent h1{
         font-size:2.5rem;
         font-weight: 400;
     }
@@ -48,7 +48,7 @@
     .heroContent{
         padding: 3.5rem 1rem;
     }
-    .heroContent h3{
+    .heroContent h1{
         font-size:3.75rem;
     }
 }

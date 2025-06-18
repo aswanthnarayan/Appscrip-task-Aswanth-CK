@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className={styles.hero}>
         <p className={styles.breadcrumps}><span>Home |</span>  Shop</p>
         <div className={styles.heroContent}>
-            <h3>DISCOVER OUR PRODUCTS</h3>
+            <h1>DISCOVER OUR PRODUCTS</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
         </div>
     </section>

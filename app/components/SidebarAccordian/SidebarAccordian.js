@@ -21,18 +21,18 @@ export default function AccordionItem({ title, options, isOpen, onToggle }) {
 
     return (
         <div className={styles.accordionItem}>
-            <div className={styles.accordionHeader} onClick={onToggle}>
+            <button type="button" className={styles.accordionHeader} onClick={onToggle}>
                 <div>
                     <h5 className={styles.title}>{title}</h5>
                     <p className={styles.subtitle}>All</p>
                 </div>
                 <span className={`${styles.arrow} ${isOpen ? styles.up : ''}`} />
-            </div>
+            </button>
             {isOpen && (
                 <div className={styles.accordionContent}>
-                    <a href="#" className={styles.unselect} onClick={unselectAll}>
+                    <button type="button" className={styles.unselect} onClick={unselectAll}>
                         Unselect all
-                    </a>
+                    </button>
                     <ul className={styles.optionsList}>
                         {options.map(option => (
                             <li key={option}>
