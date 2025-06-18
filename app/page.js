@@ -9,7 +9,7 @@ async function getProducts() {
     return res.json();
   } catch (error) {
     console.error('Error fetching products:', error);
-    return []; 
+    return [];
   }
 }
 
@@ -22,7 +22,7 @@ export const metadata = {
     description: 'Your one-stop shop for the latest and greatest products.',
     images: [
       {
-        url: '/Seo-Image.png', 
+        url: '/Seo-Image.png',
         width: 1200,
         height: 630,
         alt: 'Shopify Storefront',

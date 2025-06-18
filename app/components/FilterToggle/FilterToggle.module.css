@@ -37,19 +37,7 @@
 .mobileFilter {
     display: block;
     margin: 0;
-}
-
-.chevron {
-    display: inline-block;
-    font-size: 1.5rem;
-    line-height: 1;
-    transition: transform 0.3s ease;
-    margin-right: 0.5rem;
-    transform: rotate(0deg);
-}
-
-.rotated {
-    transform: rotate(90deg);
+    font-weight: bold;
 }
 
 .showFilter,
@@ -68,9 +56,27 @@
 }
 
 .showFilter {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.filterText {
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+.chevron {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.3s ease;
+    margin-right: 0.5rem;
+    transform: rotate(0deg);
+}
+
+.rotated {
+    transform: rotate(90deg);
 }
 
 .itemCount {
@@ -85,6 +91,7 @@
 @media (min-width: 768px) {
     .filterToggle{
         margin: 0 2rem;
+        padding: 1.5rem 0rem;
     }
     .filterToggleLargeScreen {
         display: flex;

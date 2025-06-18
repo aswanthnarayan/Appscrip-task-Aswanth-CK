@@ -48,11 +48,12 @@
 
 .subscribeForm button {
   background: none;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #c5c5c5;
+  color: #c5c5c5;
   cursor: pointer;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .contactInfo a {
@@ -140,6 +141,9 @@
   text-decoration: none;
 }
 
+.largeScreenOnlyText {
+  display: none;
+}
 
 /* Desktop Styles */
 @media (min-width: 768px) {
@@ -149,7 +153,8 @@
 
   .footerTop {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .newsletterSection,
@@ -169,6 +174,7 @@
   .mobileLinks {
     display: none;
   }
+  
 
   .desktopLinks {
     display: grid;
@@ -179,5 +185,13 @@
   .socialIcons img{
    height: 32px;
    width: 32px;
+  }
+
+  .largeScreenOnlyText {
+    display: block;
+  }
+
+  .smallScreenOnlyText {
+    display: none;
   }
 }

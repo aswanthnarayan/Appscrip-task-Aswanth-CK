@@ -17,6 +17,8 @@ export default function FilterSidebar({ onClose }) {
         { id: 'fabric', title: 'FABRIC', options: ['Cotton', 'Linen', 'Polyester'] },
         { id: 'segment', title: 'SEGMENT', options: ['Budget', 'Mid-Range', 'Luxury'] },
         { id: 'suitableFor', title: 'SUITABLE FOR', options: ['Teens', 'Adults', 'Seniors'] },
+        { id: 'rawMaterials', title: 'RAW MATERIALS', options: ['Cotton', 'Linen', 'Polyester'] },
+        { id: 'pattern', title: 'PATTERN', options: ['Solid', 'Printed', 'Striped'] },
     ];
 
     return (

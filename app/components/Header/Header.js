@@ -30,7 +30,7 @@ const toggleMenu = () => {
         </button>
         <Image src="/Logo.svg" alt="Company Logo" width={20} height={20} />
       </div>
-      <h2>LOGO</h2>
+      <div className={styles.logoText}>LOGO</div>
       <div className={styles.searchContainer}>
         <Image src="/Search.svg" alt="Search icon" width={20} height={20} />
         <Image src="/Wishlist.svg" alt="Wishlist icon" width={20} height={20} />

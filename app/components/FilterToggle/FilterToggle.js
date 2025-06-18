@@ -11,7 +11,9 @@ export default function FilterToggle({ onFilterClick, isSidebarOpen }) {
                     <p className={styles.itemCount}>3245 ITEMS</p>
                     <button type="button" className={styles.showFilter} onClick={onFilterClick}>
                         <span className={`${styles.chevron} ${isSidebarOpen ? styles.rotated : ''}`}>›</span>
-                        {isSidebarOpen ? 'HIDE FILTER' : 'SHOW FILTER'}
+                        <span className={styles.filterText}>
+                            {isSidebarOpen ? 'HIDE FILTER' : 'SHOW FILTER'}
+                        </span>
                     </button>
                 </div>
                 <button type="button" className={styles.mobileFilter} onClick={onFilterClick}>FILTER</button>

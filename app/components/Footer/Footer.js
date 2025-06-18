@@ -31,7 +31,8 @@ const Footer = () => {
         <div className={styles.footerTop}>
           <div className={styles.newsletterSection}>
             <h3 className={styles.footerTitle}>Be the first to know</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is simply dummy text.</p>
+            <p className={styles.smallScreenOnlyText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is simply dummy text.</p>
+            <p className={styles.largeScreenOnlyText}>Sign up for updates from mettā muse.</p>
             <div className={styles.subscribeForm}>
               <input type="email" placeholder="Enter your e-mail..." />
               <button type="submit">Subscribe</button>

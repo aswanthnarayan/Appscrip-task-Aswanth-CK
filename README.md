@@ -2,6 +2,10 @@
 
 This is a modern, high-performance e-commerce storefront built with Next.js, focusing on Server-Side Rendering (SSR), Search Engine Optimization (SEO), and Web Accessibility (a11y).
 
+## 🚀 Live Demo
+
+Check out the live demo: [https://appscrip-task-aswanth-ck.netlify.app/](https://appscrip-task-aswanth-ck.netlify.app/)
+
 ## Project Overview
 
 The primary goal of this project is to provide a fast, SEO-friendly, and accessible user experience for an e-commerce website. By leveraging Next.js's App Router and Server Components, the application renders product listings on the server, leading to faster initial page loads and better indexing by search engines.
