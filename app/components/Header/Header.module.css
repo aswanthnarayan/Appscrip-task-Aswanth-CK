@@ -42,7 +42,6 @@ html,body{
 }
 
 .mainHeader h2 {
-  
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -73,6 +72,7 @@ html,body{
 .logoContainer img {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .mainNav {
   display: none;
@@ -112,15 +112,15 @@ html,body{
     }
     .searchContainer img,
 .logoContainer img {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 .mainNav {
   display: flex !important;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 14px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #333; 

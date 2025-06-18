@@ -24,6 +24,7 @@
     width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .productCard:hover .productImage {
@@ -60,6 +61,7 @@
     color: #555;
     text-decoration: underline;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .wishlistButton {
@@ -74,8 +76,14 @@
 
 .wishlistButton:hover {
     opacity: 1;
+    color: #EB4C6B; 
 }
 
-.wishlistButton:hover {
-    color: #EB4C6B; 
+@media (min-width: 768px) {
+    .productName {
+        font-size: 1.25rem;
+    }
+    .loginText span{
+        font-size: .9rem;
+    }
 }

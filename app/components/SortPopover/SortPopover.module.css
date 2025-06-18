@@ -1,0 +1,68 @@
+.popover {
+  position: relative;
+  display: inline-block;
+}
+
+.popoverButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+}
+
+.icon {
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.iconOpen {
+  transform: rotate(-135deg);
+}
+
+.popoverMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.popoverMenuItem {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: normal;
+}
+
+.popoverMenuItem:hover {
+  background-color: #f5f5f5;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.checkmark {
+  font-size: 1.2rem;
+  line-height: 1;
+}

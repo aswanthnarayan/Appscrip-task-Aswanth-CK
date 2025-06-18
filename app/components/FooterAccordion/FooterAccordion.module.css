@@ -1,0 +1,40 @@
+.accordionItem {
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+}
+
+.accordionHeader {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.accordionTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.icon {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.iconOpen {
+  transform: rotate(-135deg);
+}
+
+.accordionContent {
+  padding-top: 1rem;
+}

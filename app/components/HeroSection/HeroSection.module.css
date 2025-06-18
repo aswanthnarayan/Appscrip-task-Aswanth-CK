@@ -1,11 +1,12 @@
 .breadcrumps{
-    font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 1rem   ;
+    font-size: .75rem;
 }
 .breadcrumps span{
     opacity: 0.5;
+    font-size: .75rem;
 }
 
 .heroContent{
@@ -16,11 +17,39 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding:1rem;
+}
+.heroContent h3{
+    font-size: 1.3rem;
+}
+.heroContent p{
+    font-size: 16px;
+    max-width: 750px;
+    line-height: 1.5;
 }
 
 @media (min-width: 768px) {
     .breadcrumps{
         display: none;
+    }
+    .heroContent{
+        padding: 2.5rem 1rem;
+    }
+    .heroContent h3{
+        font-size:2.5rem;
+        font-weight: 400;
+    }
+    .heroContent p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroContent{
+        padding: 3.5rem 1rem;
+    }
+    .heroContent h3{
+        font-size:3.75rem;
     }
 }
     
